@@ -1,13 +1,13 @@
 import atletas.*
 
-object tenis {
-
+object raqueta {
+    method costoElemento() = (15 * victoria.edad()). max(400)
 }
 
-object judo {
-
+object judogi {
+    method costoElemento() = (1.5 * victoria.altura()). min(200)
 }
 
-object hockey {
+object stick {
 
 }
