@@ -33,11 +33,9 @@ object victoria {
 }
 
 object comiteOlimpico {
-    var medallasDeJudoGanadas= 1
     var valorPorEntrenador = 10
-    method medallasDeJudoGanadas() = medallasDeJudoGanadas
     method sumarUnaMedallaDeJudoGanada() {
-      medallasDeJudoGanadas += 1
+        judo.sumarUnaMedallaDeJudoGanada() 
     }
     method valorPorEntrenador() = valorPorEntrenador
     method valorPorEntrenador(nuevoValorPorEntrenador){
