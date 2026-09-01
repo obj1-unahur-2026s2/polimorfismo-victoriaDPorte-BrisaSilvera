@@ -1,13 +1,27 @@
 import atletas.*
 
-object raqueta {
-    method costoElemento() = (15 * victoria.edad()). max(400)
+object tenis {
+    var entrenadores = 4
+    method presupuestoDisciplina() = 200 + (3* victoria.cantidadDeInvitados()) //revisar
+    method entrenadores() = entrenadores
+    method entrenadores(cantidadNueva) {
+        entrenadores = cantidadNueva
+    }
 }
 
-object judogi {
-    method costoElemento() = (1.5 * victoria.altura()). min(200)
+object judo {
+    var medallasDeJudoGanadas = 1
+    method presupuestoDisciplina() = 120 * self.medallasDeJudoGanadas()
+    method entrenadores() = 2
+    method medallasDeJudoGanadas() = medallasDeJudoGanadas
+    method sumarUnaMedallaDeJudoGanada() {
+      medallasDeJudoGanadas += 1
+    }
+
+ 
+
 }
 
-object stick {
+object hockey {
 
 }
