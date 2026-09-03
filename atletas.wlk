@@ -15,7 +15,7 @@ object victoria {
     method cambiarAltura(nuevaAltura) {
         altura= nuevaAltura
     }
-    method disciplina() = tenis
+    method disciplina() = disciplina
     method cambiarDisciplina(nuevaDisciplina) {
         disciplina = nuevaDisciplina
     }
