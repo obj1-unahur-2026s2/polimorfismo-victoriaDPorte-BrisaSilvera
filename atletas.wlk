@@ -19,8 +19,7 @@ object victoria {
     method cambiarDisciplina(nuevaDisciplina) {
         disciplina = nuevaDisciplina
     }
-    method presupuesto() = self.disciplina().entrenadores() * comiteOlimpico.valorPorEntrenador() 
-                                    + self.disciplina().presupuesto() + self.elemento().costoElemento()
+    method presupuesto() = (self.disciplina().entrenadores() * comiteOlimpico.valorPorEntrenador()) + self.disciplina().presupuestoDisciplina() + self.elemento().costoElemento()
     method cantidadDeInvitados() = cantidadDeInvitados
     method cambiarCantidadDeInvitados(nuevaCantidad) {
       cantidadDeInvitados = nuevaCantidad
